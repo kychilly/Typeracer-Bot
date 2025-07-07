@@ -1,5 +1,6 @@
 package com;
 
+import com.Discord.DiscordBot.commands.CommandManager;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
@@ -30,7 +31,7 @@ public class DiscordBot {
         shardManager = builder.build();
 
         // Register event listeners
-        //shardManager.addEventListener(new CommandManager());
+        shardManager.addEventListener(new CommandManager());
 
     }
 
