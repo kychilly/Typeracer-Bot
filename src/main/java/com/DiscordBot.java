@@ -23,7 +23,7 @@ public class DiscordBot {
 
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
         builder.setStatus(OnlineStatus.ONLINE);
-        builder.setActivity(Activity.watching("the sunflowers"));
+        builder.setActivity(Activity.customStatus("Clicking many keys"));
         builder.enableIntents(GatewayIntent.MESSAGE_CONTENT);
         builder.enableIntents(GatewayIntent.GUILD_MEMBERS);
         builder.setMemberCachePolicy(MemberCachePolicy.ALL);
